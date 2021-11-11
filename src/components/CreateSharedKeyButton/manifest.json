@@ -1,0 +1,46 @@
+{
+  "displayName": "Create Encryption Create",
+  "defaultWidth": 160,
+  "defaultHeight": 36,
+  "components": "./index.js",
+  "icon": "./example-thumbnail.png",
+  "props": [
+    {
+      "name": "title",
+      "displayName": "Label for the button",
+      "type": "text",
+      "default": "Create Crypto Key",
+      "styles": {
+        "fontFamily": "@body",
+        "color": "#757575",
+        "fontWeight": "normal"
+      }
+    },
+    {
+      "name": "icon",
+      "displayName": "Icon",
+      "type": "icon"
+    },
+    {
+      "name": "backgroundColor",
+      "displayName": "Background Color",
+      "type": "color",
+      "default": "@primary"
+    },
+    {
+        "name": "onKeysGenerated",
+        "displayName": "Fired when key pair is generated",
+        "type": "action",
+        "arguments": [
+          {
+            "type": "text",
+            "displayName": "Public Key"
+          },
+          {
+            "type": "text",
+            "displayName": "Private Key"
+          }
+        ]
+    }
+  ]
+}

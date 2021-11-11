@@ -1,0 +1,51 @@
+{
+  "name": "encryption-toolkit",
+  "description": "A suite of componets to facilitate encyption with Adalo data",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "ISC",
+  "author": "Steven McKeown",
+  "scripts": {
+    "start": "tsc --watch & adalo dev",
+    "build": "tsc",
+    "login": "adalo login",
+    "publish": "adalo publish"
+  },
+  "adalo": {
+    "logo": "./example-logo.png",
+    "displayName": "Encryption Toolkit",
+    "components": [
+      {
+        "name": "SharedEncryptedTextInput",
+        "manifest": "./src/components/SharedEncryptedTextInput/manifest.json"
+      },
+      {
+        "name": "SharedEncryptedText",
+        "manifest": "./src/components/SharedEncryptedText/manifest.json"
+      },
+      {
+        "name": "CreateSharedKeyButton",
+        "manifest": "./src/components/CreateSharedKeyButton/manifest.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@adalo/cli": "^0.0.43",
+    "@types/react": "^17.0.34",
+    "@types/react-native": "^0.66.3",
+    "@types/react-native-vector-icons": "^6.4.10",
+    "react": "^16.9.0",
+    "react-art": "^16.6.0",
+    "react-dom": "^16.9.0",
+    "react-native-web": "^0.9.5",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "@protonapp/react-native-material-ui": "^2.0.6",
+    "@stablelib/base64": "^1.0.1",
+    "@stablelib/utf8": "^1.0.1",
+    "expo-random": "^12.0.1",
+    "react-native-vector-icons": "^9.0.0",
+    "tweetnacl": "^1.0.3"
+  }
+}
