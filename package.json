@@ -1,7 +1,7 @@
 {
   "name": "encryption-toolkit",
   "description": "A suite of componets to facilitate encyption with Adalo data",
-  "version": "1.0.12",
+  "version": "1.1.0",
   "main": "index.js",
   "license": "ISC",
   "author": "Steven McKeown",
