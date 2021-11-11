@@ -1,7 +1,7 @@
 {
   "name": "encryption-toolkit",
   "description": "A suite of componets to facilitate encyption with Adalo data",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "license": "ISC",
   "author": "Steven McKeown",
@@ -42,6 +42,7 @@
   },
   "dependencies": {
     "@protonapp/react-native-material-ui": "^2.0.6",
+    "@react-native-async-storage/async-storage": "^1.15.11",
     "@stablelib/base64": "^1.0.1",
     "@stablelib/utf8": "^1.0.1",
     "expo-random": "^12.0.1",

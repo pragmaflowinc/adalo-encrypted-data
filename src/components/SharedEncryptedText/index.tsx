@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { TextInput, Text, View, StyleSheet } from 'react-native'
-import { SharedEncryptedTextProps } from './generated'
+import { DecryptedTextProps } from './generated'
 import { decrypt, encrypt } from '../../utils/crypto';
 
 
-const SharedEncryptedText = ({ color, text, theirPublicKey, myPrivateKey, editor }: SharedEncryptedTextProps) => {
+const SharedEncryptedText = ({ color, text, theirPublicKey, myPrivateKey, editor }: DecryptedTextProps) => {
 	const [decryptedValue, setDescryptedValue] = useState('')
 
 	useEffect(() => {

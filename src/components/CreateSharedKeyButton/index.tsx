@@ -2,17 +2,19 @@ import { Text, View } from "react-native";
 import React from "react";
 import { CreateKeyPair, SHARED_PRIVATE_KEY } from "../../utils/crypto";
 import { Button } from '@protonapp/react-native-material-ui';
-import { EncryptedCreateKeyButtonProps } from "./generated";
+import { CreateEncryptionCreateProps } from "./generated";
+import AsyncStorage from '@react-native-async-storage/async-storage'
 
 function CreateSharedKeyButton({ onKeysGenerated,
   styles: { title: titleStyles },
   title = "",
+  persistanceKey,
   icon,
-  backgroundColor,}: EncryptedCreateKeyButtonProps) {
+  backgroundColor,}: CreateEncryptionCreateProps) {
   const createPrivateKey = () => {
-		if (onKeysGenerated) { 
-
+		if (onKeysGenerated && persistanceKey) { 
 			const { myPublicKey: publicKey, myPrivateKey: privateKey } = CreateKeyPair()
+      AsyncStorage.setItem(persistanceKey, privateKey)
       onKeysGenerated(publicKey, privateKey)
 		}
 	} 

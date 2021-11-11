@@ -28,9 +28,10 @@ export interface IFormTextValue {
 }
 
 
-export interface EncryptedCreateKeyButtonProps {
+export interface CreateEncryptionCreateProps {
   title?: string
   styles: { title: IStyles }
+  persistanceKey?: string
   icon?: string
   backgroundColor?: string
   onKeysGenerated?: (PublicKey?: string, PrivateKey?: string) => void

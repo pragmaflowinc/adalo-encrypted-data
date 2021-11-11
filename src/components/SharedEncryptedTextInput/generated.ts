@@ -28,7 +28,7 @@ export interface IFormTextValue {
 }
 
 
-export interface SharedEncryptedTextInputProps {
+export interface EncryptedTextInputProps {
   text?: IFormTextValue
   borderColor?: string
   borderWidth?: number

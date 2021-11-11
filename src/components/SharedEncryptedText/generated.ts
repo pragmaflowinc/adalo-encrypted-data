@@ -28,7 +28,7 @@ export interface IFormTextValue {
 }
 
 
-export interface SharedEncryptedTextProps {
+export interface DecryptedTextProps {
   text?: string
   color?: string
   theirPublicKey?: string

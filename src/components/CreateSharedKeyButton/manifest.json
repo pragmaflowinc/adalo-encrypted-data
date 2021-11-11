@@ -17,6 +17,11 @@
       }
     },
     {
+      "name": "persistanceKey",
+      "displayName": "Persistance Key",
+      "type": "text"
+    },
+    {
       "name": "icon",
       "displayName": "Icon",
       "type": "icon"
