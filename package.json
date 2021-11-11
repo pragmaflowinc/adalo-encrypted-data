@@ -1,7 +1,7 @@
 {
   "name": "encryption-toolkit",
   "description": "A suite of componets to facilitate encyption with Adalo data",
-  "version": "1.0.1",
+  "version": "1.0.12",
   "main": "index.js",
   "license": "ISC",
   "author": "Steven McKeown",
@@ -27,7 +27,9 @@
         "name": "CreateSharedKeyButton",
         "manifest": "./src/components/CreateSharedKeyButton/manifest.json"
       }
-    ]
+    ],
+    "iosInstallScript": "./scripts/install.sh",
+    "androidInstallScript": "./scripts/install.sh"
   },
   "devDependencies": {
     "@adalo/cli": "^0.0.43",
@@ -45,7 +47,7 @@
     "@react-native-async-storage/async-storage": "^1.15.11",
     "@stablelib/base64": "^1.0.1",
     "@stablelib/utf8": "^1.0.1",
-    "expo-random": "^12.0.1",
+    "react-native-get-random-values": "^1.7.0",
     "react-native-vector-icons": "^9.0.0",
     "tweetnacl": "^1.0.3"
   }
